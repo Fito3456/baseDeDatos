@@ -1,0 +1,46 @@
+.Alto{
+    height: 100vh;
+}
+.menuBotones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.finder{
+    background-image: url(/imagenes/busqueda-de-lupa.png) ;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    font-size: 16px;
+    height: 35px;
+    font-weight: normal;
+    width: 50%;
+    padding: 0px 40px;
+    border: none;
+    background-color: rgb(219, 215, 215);
+    border-radius: 20px;
+    color: #333;
+    margin-left: 435px;
+    
+}
+.finder:focus{
+    background-image: none;
+}
+.separar-tr {
+    margin-top: 20px;
+}
+
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  }
