@@ -47,11 +47,11 @@ function agregarAlumno() {
     var celdaEdad = fila.insertCell();
     var celdaCurso = fila.insertCell();
     var celdaCalificaciones = fila.insertCell();
-    celdaNombre.textContent = nombre;
-    celdaApellido.textContent = apellido;
-    celdaEdad.textContent = edad;
-    celdaCurso.textContent = curso || "no hay curso";
-    celdaCalificaciones.textContent = calificacion || "Registrarse en un curso";
+    celdaNombre.textContent ="" + nombre;
+    celdaApellido.textContent ="" + apellido;
+    celdaEdad.textContent ="" + edad;
+    celdaCurso.textContent ="" + curso || "no hay curso";
+    celdaCalificaciones.textContent ="" + calificacion || "Registrarse en un curso";
 
     var nuevoAlumno = {
         nombre: nombre,
@@ -179,11 +179,11 @@ function ImprimirTablaCurso() {
         var celdaEdad = fila.insertCell();
         var celdaCurso = fila.insertCell();
         var celdaCalificaciones = fila.insertCell();
-        celdaNombre.textContent = alumno.nombre;
-        celdaApellido.textContent = alumno.apellido;
-        celdaEdad.textContent = alumno.edad;
+        celdaNombre.textContent = "" + alumno.nombre;
+        celdaApellido.textContent = "" + alumno.apellido;
+        celdaEdad.textContent = "" + alumno.edad;
         celdaCurso.textContent = alumno.curso;
-        celdaCalificaciones.textContent = alumno.calificacion || "no hay calificacion";
+        celdaCalificaciones.textContent =  "" + alumno.calificacion || "no hay calificacion";
     }
 }
 function RemplazarTablaAlumno() {
@@ -220,7 +220,7 @@ function RemplazarTablaAlumno() {
         celdaApellido.textContent = alumno.apellido;
         celdaEdad.textContent = alumno.edad;
         celdaCurso.textContent = alumno.curso;
-        celdaCalificaciones.textContent = alumno.calificacion;
+        celdaCalificaciones.textContent = alumno.calificacion ;
     }
 }
 function getLocalStorage(){

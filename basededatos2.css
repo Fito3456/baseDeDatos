@@ -1,11 +1,5 @@
-.Alto{
-    height: 100vh;
-}
-.menuBotones{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
+.Alto {
+    height: 90vh;
 }
 
 .finder{
@@ -27,6 +21,64 @@
 .finder:focus{
     background-image: none;
 }
+#fondo{
+    background-image: url(/imagenes/estrellas.jpg);
+    height: 576px;
+}
+.botones {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 109px;
+    margin-top: 254px;
+}
+#boton-alumno{
+    background-color: darkseagreen;
+    border: 3px white solid;
+    border-radius: 18px;
+    width: 145px;
+    height: 38px;
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+}
+.boton-calificacion{
+    background-color: darkcyan;
+    border: 3px white solid;
+    border-radius: 18px;
+    width: 224px;
+    height: 38px;
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+
+}
+#boton-curso{
+    background-color: darkseagreen;
+    border: 3px white solid;
+    border-radius: 18px;
+    width: 145px;
+    height: 38px;
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+    margin: 17px;
+
+}
+.menuBotones {
+    position: relative;
+    width: 100%;
+}
+
+.imagen {
+    position: absolute;
+    width: 343px;
+    top: 0px;
+    height: 576px;
+    left: -55px;
+}
+
 .separar-tr {
     margin-top: 20px;
 }
