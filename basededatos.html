@@ -20,15 +20,12 @@
 
             <div class="col-3 border-end menuBotones"> 
 
-                <img src="/imagenes/hello.jpg"class="imagen" alt="">
-              
+              <img src="/imagenes/hello.jpg" id="imagen-alumno" class="imagen">
+              <img src="/imagenes/hello2.jpg" style="display: none;"   id="imagen-curso" class="imagen">
               <div class="botones">
-              <btn id="boton-alumno" type="button"  
-              onclick="monstrarContenido('contenido-alumno')">Alumnos</btn>
-
-                <btn id="boton-curso" type="button" 
-                onclick="monstrarContenido('contenido-curso')"> Cursos</btn>
-            </div>
+                <button id="boton-alumno" type="button" onclick="mostrarElementos(['contenido-alumno', 'imagen-alumno'])">Alumnos</button>      
+                <button id="boton-curso" type="button" onclick="mostrarElementos(['contenido-curso', 'imagen-curso'])"> Cursos</button>
+               </div>
         </div>
             <div class="col-9" >
               <div id="contenido-alumno">

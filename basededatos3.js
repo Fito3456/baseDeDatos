@@ -9,12 +9,15 @@ class Alumno {
 }
 class cursos{
 }
-function monstrarContenido(contenido){
+function mostrarElementos(elementos) {
     document.getElementById("contenido-alumno").style.display="none";
     document.getElementById("contenido-curso").style.display="none";
+    document.getElementById("imagen-curso").style.display="none";
 
-    document.getElementById(contenido).style.display="block";
-}
+    for (let i = 0; i < elementos.length; i++) {
+      document.getElementById(elementos[i]).style.display = 'block';
+    }
+ }
 
 const alumnos = JSON.parse(localStorage.getItem("Alumno"))|| []
 function agregarAlumnos(nombre, apellido, edad, curso , calificaciones){
